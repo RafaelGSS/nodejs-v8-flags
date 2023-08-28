@@ -14,7 +14,7 @@ function sleep (seconds) {
 }
 
 async function runAutocannon(port) {
-  const output = execSync(`autocannon -c 100 -d 10 http://localhost:${port}/`)
+  const output = execSync(`autocannon -c 100 -d 30 http://localhost:${port}/`)
   return output
 }
 
